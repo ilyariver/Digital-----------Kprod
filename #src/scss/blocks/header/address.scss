@@ -1,0 +1,59 @@
+.address {
+  display: flex;
+  font-style: normal;
+
+  &__tel-number {
+    display: flex;
+    align-items: center;
+
+    margin-right: 43px;
+
+    font-weight: 300;
+  }
+
+  &__whatsapp {
+    display: flex;
+    align-items: center;
+
+    padding: 10px 25px;
+
+    background-color: #4F15F3;
+
+    border-radius: 9px;
+
+    &:hover {
+      background-color: lighten(#4F15F3, 5%);
+    }
+
+    &:before {
+      content: "";
+
+      width: 30px;
+      height: 30px;
+
+      background-image: url("../img/header/whatsapp.svg");
+      background-repeat: no-repeat;
+      background-position-y: center;
+    }
+  }
+
+  @include medium {
+    &__tel-number {
+      font-size: 14px;
+    }
+  }
+
+  @include small {
+    &__tel-number {
+      margin-right: 25px;
+
+      font-size: 10px;
+    }
+
+    &__whatsapp {
+      padding: 5px 15px;
+
+      font-size: 11px;
+    }
+  }
+}

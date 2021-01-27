@@ -1,0 +1,79 @@
+.header {
+  position: relative;
+  padding: 66px 0;
+
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    &:after {
+      content: "";
+      position: absolute;
+
+      top: 50%;
+      left: -6%;
+
+      transform: translateY(-50%);
+
+      width: 49px;
+      height: 34px;
+
+      background-image: url("../img/header/Vector.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__burger {
+    display: none;
+  }
+
+  @include large {
+    padding: 35px 0;
+
+  }
+
+  @include medium {
+    &__burger {
+      display: block;
+      padding-left: 25%;
+
+      width: 50px;
+      height: 50px;
+
+      background-image: url("../img/header/burger.svg");
+      background-repeat: no-repeat;
+      background-color: transparent;
+      background-position: center;
+      background-size: 40px;
+
+      border: none;
+      outline: none;
+    }
+
+    &__container {
+      display: flex;
+      &:after {
+        left: -1%;
+      }
+    }
+  }
+
+  @include small {
+    padding: 16px 0;
+
+    &__burger {
+      padding-left: 9%;
+
+      width: 4px;
+      height: 38px;
+
+      background-size: 24px;
+
+
+    }
+
+    &__container:after {
+      left: -13%
+    }
+  }
+}

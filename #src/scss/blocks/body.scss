@@ -1,0 +1,99 @@
+.body {
+  position: relative;
+  background-image: url("../img/main/lines.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  &:after, &:before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    background-repeat: no-repeat;
+    background-size: 40%;
+  }
+  &:before {
+    top: 28%;
+    left: 42%;
+    background-image: url("../img/main/figure2.png");
+  }
+
+  &:after {
+    top: 11%;
+    right: 34%;
+    background-image: url("../img/main/figure.png");
+  }
+
+  &__cross {
+    position: absolute;
+    width: 14%;
+    height: 14%;
+    background-repeat: no-repeat;
+
+    &--1 {
+      top: 19%;
+      left: 8%;
+
+      background-image: url("../img/main/plus.svg");
+      background-size: 6%;
+    }
+    &--2 {
+      top: 65%;
+      left: 15%;
+
+      background-image: url("../img/main/plus.svg");
+      background-size: 4%;
+    }
+
+    &--3 {
+      top: 31%;
+      left: 53%;
+
+      background-image: url("../img/main/plus.svg");
+      background-size: 3%;
+    }
+  }
+
+  &__ellipse {
+    position: absolute;
+    width: 14%;
+    height: 14%;
+    background-repeat: no-repeat;
+    &--1 {
+      top: 21%;
+      left: 50%;
+
+      background-image: url("../img/main/ellipse.svg");
+      background-size: 7%;
+    }
+  }
+
+  @include small {
+    &__cross {
+      &--1 {
+        top: 5%;
+        left: 14%;
+        background-size: 9%;
+      }
+      &--2 {
+        top: 34%;
+        left: 22%;
+        background-size: 17%;
+      }
+      &--3 {
+        top: 10%;
+        left: 66%;
+        background-size: 7%;
+      }
+    }
+
+    &__ellipse {
+      &--1 {
+        top: 19%;
+        left: 79%;
+
+        background-size: 9%;
+      }
+    }
+  }
+}

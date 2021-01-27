@@ -1,0 +1,43 @@
+.profit-company {
+  width: 235px;
+
+  color: #121B30;
+
+  font-family: GothamPro;
+  font-weight: 700;
+  font-size: 18px;
+
+  &__text {
+    position: relative;
+
+    margin-left: 63px;
+    padding-bottom: 15px;
+
+    width: 72%;
+
+    &:after {
+      content: "";
+
+      position: absolute;
+      top: -3px;
+      left: -60px;
+
+      padding: 25px;
+
+      height: 17px;
+      width: 20px;
+
+      border-radius: 50%;
+
+      background-image: url("../img/main/arrow.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #F6F4FC;
+    }
+  }
+
+  @include medium {
+    width: 180px;
+    font-size: 15px;
+  }
+}

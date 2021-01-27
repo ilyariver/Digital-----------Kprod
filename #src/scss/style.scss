@@ -1,0 +1,46 @@
+//GLOBAL
+
+@import "variables";
+@import "normalize";
+@import "global";
+@import "mixins";
+@import "fonts";
+@import "visually-hidden";
+@import "container";
+
+//BODY
+
+@import "blocks/body";
+
+//HEADER
+
+@import "blocks/header/header";
+@import "blocks/header/navigation";
+@import "blocks/header/address";
+
+
+//MAIN
+
+@import "blocks/main/main";
+@import "blocks/main/website-development";
+@import "blocks/main/profit-company";
+
+////FOOTER
+//
+//@import "blocks/footer/";
+//
+////MODAL
+//
+//@import "modal/modal";
+//
+//
+////SLIDER
+//
+//@import "blocks/slider";
+//
+//
+//
+//
+//
+//
+//

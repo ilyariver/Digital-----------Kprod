@@ -1,0 +1,406 @@
+.website-development {
+  display: flex;
+  justify-content: space-between;
+
+  position: relative;
+
+  padding-top: 5%;
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__title {
+    display: inline-block;
+
+    margin: 0 0 30px 0;
+    padding-right: 25%;
+
+    font-size: 48px;
+  }
+
+  &__top {
+    display: inline-block;
+    margin-bottom: 12px;
+    font-weight: 400;
+  }
+
+  &__bottom {
+    font-weight: 300;
+  }
+
+  &__text {
+    display: inline-block;
+
+    margin: 0 0 60px 0;
+    padding-right: 35%;
+
+    font-size: 24px;
+    font-weight: 300;
+  }
+
+  &__input {
+    width: 284px;
+    height: 56px;
+
+    margin-right: 20px;
+    padding: 0 20px;
+
+    background-color: #fff;
+    border-radius: 12px;
+    border: none;
+
+    font-size: 18px;
+    color: #3e3e3e;
+
+    &::placeholder {
+      font-size: 18px;
+      color: #bcbcbc;
+    }
+  }
+
+  &__button {
+    width: 335px;
+    height: 56px;
+
+    background: #F86161;
+    border-radius: 12px;
+    border: none;
+
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken(#F86161, 5%);
+    }
+  }
+
+  &__right {
+    position: relative;
+
+    &:after {
+      content: "";
+
+      display: block;
+      position: absolute;
+
+      left: 64px;
+      bottom: 86px;
+
+      border: 0 solid transparent;
+      border-right-width: 87px;
+      border-left-width: 23px;
+      border-bottom: 91px solid #ffd02c;
+
+      filter: blur(7px);
+
+      z-index: 150;
+    }
+  }
+
+  &__person {
+    position: relative;
+
+    width: 407px;
+    height: 574px;
+
+    background-color: #F86161;
+    background-size: 12px;
+
+    border-radius: 59px;
+
+    z-index: 100;
+
+    &:before {
+      content: "";
+
+      position: absolute;
+      top: 38px;
+      right: -40px;
+
+      width: 110px;
+      height: 110px;
+
+      background-image: url("../img/main/points.svg");
+      background-repeat: no-repeat;
+      z-index: 10;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: -106px;
+    left: -70px;
+
+    max-width: none;
+
+    z-index: 100;
+  }
+
+  &__schedule {
+    position: absolute;
+    bottom: -96px;
+    right: -71px;
+
+    padding: 20px 30px;
+
+    background-color: #fff;
+
+    border-radius: 15px;
+
+    z-index: 250;
+  }
+
+  &__more-people {
+    position: absolute;
+    top: -23px;
+    left: -49px;
+
+    width: 159px;
+    height: 186px;
+
+    padding-top: 90px;
+
+    background-color: #121B30;
+
+    border-radius: 21px;
+    text-align: center;
+
+    z-index: 300;
+
+    &:after {
+      content: "";
+
+      position: absolute;
+      top: 15%;
+      left: 50%;
+
+      transform: translateX(-50%);
+
+      padding: 15%;
+
+      width: 24px;
+      height: 19px;
+
+      background-image: url("../img/main/people.svg");
+      background-color: #F6F4FC;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      border-radius: 50%;
+    }
+  }
+
+  &__number-percent {
+    display: block;
+    padding-bottom: 8px;
+
+    font-size: 22px;
+  }
+
+  &__number-people {
+    display: block;
+
+    padding: 0 20px;
+    font-size: 12px;
+  }
+
+  &__more-sales {
+    position: absolute;
+    right: -40%;
+    bottom: 40%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: 83px;
+    padding-right: 30px;
+
+    width: 288px;
+    height: 99px;
+
+    background-color: #121B30;
+
+    border-radius: 21px;
+    z-index: 300;
+
+    &:after {
+      content: "";
+
+      position: absolute;
+      top: 50%;
+      left: 20px;
+
+      transform: translateY(-50%);
+
+      padding: 25px;
+
+      background-image: url("../img/main/pie.svg");
+      background-color: #F6F4FC;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      border-radius: 50%;
+    }
+  }
+
+  &__quantity-people {
+    display: block;
+    font-size: 22px;
+  }
+
+  &__internet-sales {
+    display: block;
+    font-size: 12px;
+  }
+
+  @include medium {
+    padding-top: 13%;
+    &__person {
+      width: 278px;
+      height: 334px;
+
+      &:before {
+        top: -52px;
+        left: 30px;
+        width: 85%;
+      }
+    }
+    &__img {
+      top: -80px;
+      left: -29px;
+      width: 320px;
+    }
+
+    &__right {
+      &:after {
+        left: 44px;
+        bottom: 141px;
+      }
+    }
+
+    &__more-people {
+      top: -72px;
+      left: -66px;
+      width: 136px;
+    }
+
+    &__more-sales {
+      right: -17%;
+      bottom: 41%;
+
+      padding-left: 83px;
+      padding-right: 30px;
+
+      width: 231px;
+      height: 81px;
+    }
+
+    &__internet-sales {
+      font-size: 9px;
+    }
+
+    &__quantity-people {
+      font-size: 17px;
+    }
+
+    &__schedule {
+      bottom: -43px;
+      right: 22px;
+    }
+
+    &__title {
+      padding-right: 15%;
+      font-size: 40px;
+    }
+
+    &__text {
+      margin: 0 0 35px 0;
+      padding-right: 20%;
+
+      font-size: 11x;
+      line-height: 40px;
+    }
+
+    &__input {
+      margin: 0 0 20px 0;
+
+      width: 335px;
+    }
+  }
+
+  @include small {
+    flex-direction: column;
+
+    &__left {
+      margin-bottom: 20%;
+    }
+
+    &__right {
+      display: flex;
+      justify-content: center;
+      &:after {
+        left: 31%;
+        bottom: 12%;
+      }
+    }
+    &__title {
+      display: flex;
+      flex-direction: column;
+      font-size: 26px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 25px;
+    }
+
+    &__form {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__input {
+      width: 255px;
+      margin-right: 20px;
+    }
+
+    &__more-sales {
+      right: 6%;
+      bottom: 37%;
+    }
+
+    &__more-people {
+      top: -40px;
+      left: -50px;
+
+      width: 126px;
+      height: 172px;
+    }
+
+    &__schedule {
+      right: 23%;
+      bottom: -54%;
+    }
+
+    &__person {
+      width: 278px;
+      height: 334px;
+
+      &:before {
+        top: -52px;
+        left: 84%;
+        width: 53px;
+      }
+    }
+    &__img {
+      top: -80px;
+      left: -29px;
+      width: 320px;
+    }
+  }
+}
